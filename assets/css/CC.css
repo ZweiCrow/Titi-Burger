@@ -1,0 +1,596 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+html * {
+  font-family: "Quicksand";
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #705A7A;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #205D7D;
+}
+
+h3 {
+  font-size: 30px;
+  color: #FF7E86;
+}
+
+p {
+  font-size: 25px;
+  color: #686868;
+}
+
+a {
+  font-size: 25px;
+  color: #F7F7F7;
+}
+
+header {
+  height: 150px;
+}
+header #frontHeader {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+header #frontHeader #logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #frontHeader #logo img {
+  width: 90%;
+  height: 90%;
+}
+header #frontHeader #logo img:hover {
+  filter: drop-shadow(0 0 4px #F7F7F7);
+}
+header #frontHeader #Navbar {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #frontHeader #Navbar nav {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+header #frontHeader #Navbar nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #frontHeader #Navbar nav ul li {
+  margin: 0 30px;
+}
+header #frontHeader #Navbar nav ul li a {
+  font-size: 25px;
+  color: #F7F7F7;
+  transition: 0.5s;
+}
+header #frontHeader #Navbar nav ul li a:hover {
+  color: #FFFFFF;
+  filter: drop-shadow(0 0 4px #F7F7F7);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+html * {
+  font-family: "Quicksand";
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #705A7A;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #205D7D;
+}
+
+h3 {
+  font-size: 30px;
+  color: #FF7E86;
+}
+
+p {
+  font-size: 25px;
+  color: #686868;
+}
+
+a {
+  font-size: 25px;
+  color: #F7F7F7;
+}
+
+#Arianne {
+  margin: 10px 20px 0;
+  line-height: 300%;
+}
+#Arianne p {
+  font-size: 25px;
+  color: #F7F7F7;
+}
+#Arianne a {
+  font-size: 25px;
+  transition: 0.5s;
+  color: #FF7E86;
+}
+#Arianne a:hover {
+  color: #FFFFFF;
+  filter: drop-shadow(0 0 4px #FF7E86);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+html * {
+  font-family: "Quicksand";
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #705A7A;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #205D7D;
+}
+
+h3 {
+  font-size: 30px;
+  color: #FF7E86;
+}
+
+p {
+  font-size: 25px;
+  color: #686868;
+}
+
+a {
+  font-size: 25px;
+  color: #F7F7F7;
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background: #705A7A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul {
+  height: 90%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+footer ul li {
+  height: 100%;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+}
+footer ul li p {
+  font-size: 28px;
+  color: #F7F7F7;
+  margin-bottom: 20px;
+}
+footer ul li a {
+  font-size: 25px;
+  color: #F7F7F7;
+  transition: 0.5s;
+  margin: 10px 15px;
+}
+footer ul li a:hover {
+  color: #FFFFFF;
+  filter: drop-shadow(0 0 4px #F7F7F7);
+}
+footer ul li div {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+}
+
+#map {
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    height: 300px;
+    width: 100%;
+    background: #705A7A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul {
+    height: 90%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer ul li {
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer ul li p {
+    font-size: 28px;
+    color: #F7F7F7;
+    margin-bottom: 20px;
+  }
+  footer ul li a {
+    font-size: 25px;
+    color: #F7F7F7;
+    transition: 0.5s;
+    margin: 10px 15px 10px 0;
+  }
+  footer ul li a:hover {
+    color: #FFFFFF;
+    filter: drop-shadow(0 0 4px #F7F7F7);
+  }
+  footer ul li div {
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    height: fit-content;
+    width: 100%;
+    background: #705A7A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer ul {
+    height: 1000px;
+    width: 95%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer ul li {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  footer ul li p {
+    font-size: 28px;
+    color: #F7F7F7;
+    margin-bottom: 20px;
+  }
+  footer ul li a {
+    font-size: 20px;
+    color: #F7F7F7;
+    transition: 0.5s;
+    margin: 10px 15px 10px 45px;
+  }
+  footer ul li a:hover {
+    color: #FFFFFF;
+    filter: drop-shadow(0 0 4px #F7F7F7);
+  }
+  footer ul li div {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  footer ul #socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+body {
+  background: url(../images/header.png) no-repeat;
+  background-size: 150% 100%;
+}
+
+#menu {
+  width: 95%;
+  height: 900px;
+  margin: 50px auto;
+  background: url(../images/Icons/C&CBack.svg) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#menu h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #705A7A;
+}
+#menu p {
+  font-size: 25px;
+  color: #686868;
+  width: 80%;
+  margin: 70px 0;
+  text-align: center;
+}
+#menu a {
+  font-size: 25px;
+  background: #FF7E86;
+  border: 2px solid #FF7E86;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: #F7F7F7;
+  transition: 0.5s;
+}
+#menu a:hover {
+  background: #F7F7F7;
+  border: 2px solid #F7F7F7;
+  color: #FF7E86;
+  box-shadow: 0 0 4px #FF7E86;
+}
+#menu div {
+  width: 80%;
+  height: 40%;
+  background: url(../images/Icons/progressBar.svg) no-repeat;
+  background-size: 80%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+#menu div div {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  background: #686868;
+  mask-image: url(../images/Icons/mask.svg);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url(../images/Icons/mask.svg);
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu div div a {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu div div a img {
+  width: 125%;
+  height: 100%;
+  transition: 0.5s;
+}
+#menu div div a img:hover {
+  filter: brightness(1.5);
+}
+
+/*# sourceMappingURL=CC.css.map */

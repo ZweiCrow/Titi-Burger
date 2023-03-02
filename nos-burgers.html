@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titi Burger</title>
+    <link rel="stylesheet" href="assets/css/Choix.css">
+</head>
+<body>
+    <h1 style="display: none;">Accueil</h1>
+
+    <header>
+        <div id="frontHeader">
+            <div id="logo"><a href="index.html"><img src="assets/images/Icons/Logo.svg" alt=""></a></div>
+            <div id="Navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">La Carte</a></li>
+                        <li><a href="index.html">Titi Story</a></li>
+                        <li><a href="index.html">Le Resto</a></li>
+                        <li><a href="index.html">Actus</a></li>
+                        <li><a href="index.html">Réserver</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+      <div id="Arianne">
+        <p><a href="index.html">Accueil</a>  > <a href="click-collect.html">Click & Collect</a> > Choix des Burgers </p>
+      </div>
+
+      <div id="menu">
+        <div id="up">
+          <h1>Choix des Burgers</h1>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="down">
+            <form action="">
+                <ul id="api">
+                    <li>
+                        <input type="radio" name="choix" id="123456789">
+                        <label for="123456789">
+                            <div class="image">
+                                <img src="assets/images/Choix/CDarko.png" alt="">
+                            </div>
+                            <div class="desc">
+                                <h3>Darko</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quaerat reprehenderit provident, at velit corporis ea excepturi fuga ipsam, voluptates ex distinctio aliquid sit mollitia itaque assumenda enim, quibusdam blanditiis.</p>
+                            </div>
+                            <div class="prix"><p>14.95 $</p></div>
+                        </label>
+                    </li>
+                </ul>
+                <!-- <div><button type="submit" >Suivant</button></div> -->
+                <div><a href="nos-boissons.html">Suivant</a></div>
+                
+            </form>
+        </div>
+        
+      </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <p>Mentions Légales</p>
+                <a href="">CGU</a>
+                <a href="">CGV</a>
+            </li>
+            <li>
+                <p>Plan du site</p>
+                <a href="">La Carte</a>
+                <a href="">Titi Story</a>
+                <a href="">Le Resto</a>
+                <a href="">Actus</a>
+            </li>
+            <li id="map">
+                <p>Où nous touver ?</p>
+                <div id="Gmaps"></div>
+            </li>
+            <li>
+                <p>Contacts</p>
+                <a href="">FAQ</a>
+            </li>
+            <li>
+                <a href=""><img src="assets/images/Icons/Instagram.svg" alt=""></a>
+                <a href=""><img src="assets/images/Icons/Facebook.svg" alt=""></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoeRnemxCI74BFR79V4AG0pCjj4p4Kcdk&callback=initMap&v=weekly" defer></script>
+    <script src="assets/js/CBurgers.js"></script>
+</body>
+</html>
